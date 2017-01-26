@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:attrs="http://schemas.android.com/apk/res/com.javasilev.morphing"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="@dimen/modest"
+	tools:context="com.javasilev.morphing.ui.MainActivity"
+	tools:ignore="ResAuto">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:paddingBottom="@dimen/minor"
+		android:text="@string/select_second_photo" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:baselineAligned="false"
+		android:orientation="horizontal">
+
+		<com.javasilev.morphing.ui.SelectImageWidget
+			android:id="@+id/activity_main_top_left"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/tiny"
+			android:layout_weight="1"
+			attrs:selected="true"
+			attrs:src="@drawable/q01"
+			tools:ignore="RtlHardcoded" />
+
+		<com.javasilev.morphing.ui.SelectImageWidget
+			android:id="@+id/activity_main_top_right"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/tiny"
+			android:layout_weight="1"
+			attrs:selected="false"
+			attrs:src="@drawable/q02"
+			tools:ignore="RtlHardcoded" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:baselineAligned="false"
+		android:orientation="horizontal">
+
+		<com.javasilev.morphing.ui.SelectImageWidget
+			android:id="@+id/activity_main_bottom_left"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/tiny"
+			android:layout_weight="1"
+			attrs:selected="false"
+			attrs:src="@drawable/q03"
+			tools:ignore="RtlHardcoded" />
+
+		<com.javasilev.morphing.ui.SelectImageWidget
+			android:id="@+id/activity_main_bottom_right"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/tiny"
+			android:layout_weight="1"
+			attrs:selected="false"
+			attrs:src="@drawable/q04"
+			tools:ignore="RtlHardcoded" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="bottom|end"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/activity_main_button_next"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/button_next" />
+	</LinearLayout>
+
+</LinearLayout>

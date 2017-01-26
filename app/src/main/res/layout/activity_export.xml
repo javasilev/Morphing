@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="@dimen/modest"
+	tools:context="com.javasilev.morphing.ui.ExportActivity">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="2">
+
+		<ImageView
+			android:id="@+id/activity_export_image_view_animation"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"
+			tools:ignore="ContentDescription" />
+	</FrameLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:gravity="bottom|end"
+		android:orientation="vertical">
+
+		<Button
+			android:id="@+id/activity_export_button_export"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawableLeft="@drawable/ic_file_download_black_24dp"
+			android:text="@string/gif"
+			tools:ignore="RtlHardcoded" />
+
+	</LinearLayout>
+
+</LinearLayout>

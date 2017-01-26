@@ -1,0 +1,16 @@
+<resources>
+	<string name="app_name">Morphing</string>
+	<string name="button_next">next</string>
+	<string name="max_opacity">Max. opacity:</string>
+	<string name="steps">Steps:</string>
+	<string name="duration_sec">Duration, sec:</string>
+	<string name="select_second_photo">Select second photo:</string>
+	<string name="tune">2. Tune</string>
+	<string name="export">3. Export</string>
+	<string name="select">1. Select</string>
+	<string name="saving">Saving…</string>
+	<string name="please_grant_permission">Please grant permission to access external storage.</string>
+	<string name="gif_saved">Gif saved.</string>
+	<string name="export_failed">Export failed.</string>
+	<string name="gif">gif</string>
+</resources>

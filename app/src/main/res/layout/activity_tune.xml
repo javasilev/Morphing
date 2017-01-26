@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="@dimen/modest"
+	tools:context="com.javasilev.morphing.ui.TuneActivity">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+
+		<ImageView
+			android:id="@+id/activity_tune_image_view_below"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"
+			android:src="@drawable/q01"
+			tools:ignore="ContentDescription" />
+
+		<ImageView
+			android:id="@+id/activity_tune_image_view_above"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:alpha="0.0"
+			android:scaleType="centerCrop"
+			android:src="@drawable/q02"
+			tools:ignore="ContentDescription" />
+	</FrameLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="2"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/tiny"
+			android:layout_marginTop="@dimen/minor"
+			android:text="@string/max_opacity" />
+
+		<SeekBar
+			android:id="@+id/activity_tune_seekbar_opacity"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/tiny" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:baselineAligned="false"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/activity_tune_text_view_steps"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/minor"
+				android:layout_marginTop="@dimen/modest"
+				android:text="@string/steps"
+				tools:ignore="RtlHardcoded" />
+
+			<Spinner
+				android:id="@+id/activity_tune_spinner_steps"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@id/activity_tune_text_view_steps"
+				android:layout_toRightOf="@id/activity_tune_text_view_steps"
+				tools:ignore="RtlHardcoded" />
+
+			<TextView
+				android:id="@+id/activity_tune_text_view_duration"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@id/activity_tune_text_view_steps"
+				android:layout_below="@id/activity_tune_text_view_steps"
+				android:layout_marginRight="@dimen/minor"
+				android:layout_marginTop="@dimen/modest"
+				android:text="@string/duration_sec"
+				tools:ignore="RtlHardcoded" />
+
+			<TextView
+				android:id="@+id/activity_tune_text_view_duration_sec"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@id/activity_tune_text_view_duration"
+				android:layout_marginRight="@dimen/minor"
+				android:layout_marginTop="@dimen/minor"
+				android:layout_toRightOf="@id/activity_tune_text_view_duration"
+				tools:ignore="RtlHardcoded"
+				tools:text="2.0" />
+
+			<Button
+				android:id="@+id/activity_tune_button_next"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentRight="true"
+				android:text="@string/button_next"
+				tools:ignore="RtlHardcoded" />
+
+			<SeekBar
+				android:id="@+id/activity_tune_seekbar_duration"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@id/activity_tune_text_view_duration"
+				android:layout_marginTop="@dimen/tiny"
+				android:layout_marginRight="@dimen/tiny"
+				android:layout_toLeftOf="@id/activity_tune_button_next"
+				android:max="55"
+				tools:ignore="RtlHardcoded" />
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
